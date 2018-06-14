@@ -36,4 +36,5 @@ def pictures_list_by_country(country):
     pictures = [picture for picture in Pictures if picture['country'].lower() == country]
     return render_template('pictures_index.html', pictures=pictures)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
